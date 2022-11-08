@@ -35,6 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
+  box-sizing: border-box;
 }
 
 .sidebar h1 {
@@ -96,4 +97,24 @@ button:focus {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .sidebar h1 {
+    font-size: 30px;
+  }
+
+  .sidebar p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebar h1 {
+      font-size: 20px;
+    }
+
+  .sidebar p {
+    font-size: 10px;
+  }
 }
